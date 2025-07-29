@@ -12,8 +12,36 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+.header-left,
+.header-right {
+    display: flex;
+    gap: 1rem;
+}
+.header-left ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+@media (max-width: 625px) {
+    .header {
+        justify-content: center;
+    }
+    .header-left,
+    .header-right {
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+}
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
