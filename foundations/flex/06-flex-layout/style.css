@@ -5,6 +5,44 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header,
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.header ul,
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+.header ul li a,
+.footer ul li a {
+    text-decoration: none;
+    color: grey;
+}
+.header ul li a:hover,
+.footer ul li a:hover {
+    color: darkgrey;
+    text-decoration: underline;
+}
+.footer {
+    background-color: lightgrey;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 img {
